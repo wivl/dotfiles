@@ -11,7 +11,7 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'morhetz/gruvbox' 
 Plug 'neoclide/coc-prettier'
 Plug 'octol/vim-cpp-enhanced-highlight'
-
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 "set cursorline
@@ -36,5 +36,15 @@ set softtabstop=4
 set mouse=a
 
 set encoding=UTF-8
+set helplang=cn
 
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+" 括号自动补全
+" inoremap ( ()<Esc>i
+" inoremap [ []<Esc>i
+" inoremap < <><Esc>i
+" inoremap { {}<Esc>i
+" inoremap ' ''<Esc>i
+" inoremap " ""<Esc>i
+" inoremap { {<CR>}<Esc>O
