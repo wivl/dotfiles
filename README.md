@@ -1,2 +1,5 @@
-# configs
-Some of my configurations, including neovim ,etc.
+# dotfile
+Some of my configurations.
+
+* init.vim
+* keyboards configs and keymaps
