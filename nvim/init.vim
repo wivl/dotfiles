@@ -1,3 +1,9 @@
+if exists('g:vscode')
+    " VSCode extension
+else
+    " ordinary neovim
+endif
+
 " ----- PLUGINS -----
 
 call plug#begin('~/.local/share/nvim/plugged')
@@ -28,6 +34,19 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 
 " -- auto-pair --
 Plug 'jiangmiao/auto-pairs'
+
+" -- telescope.nvim --
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+
+" -- js --
+"Plug 'yuezk/vim-js'
+"Plug 'HerringtonDarkholme/yats.vim'
+"Plug 'maxmellon/vim-jsx-pretty'
+
+" -- html --
+"Plug 'mattn/emmet-vim'
+
 
 call plug#end()
 
@@ -63,7 +82,31 @@ set encoding=UTF-8
 set helplang=cn
 
 " ----- KEY-MAPS -----
+let mapleader = " "
+
 nnoremap <C-t> :NERDTreeToggle<CR>
+
+"	-- telescope.nvim keymap --
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+"	-- suggestion selection for coc --
+ let g:coc_global_extensions = [
+	\ 'coc-json',
+	\ 'coc-html',
+	\ 'coc-tsserver',
+	\ 'coc-clangd']
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 
 
@@ -84,5 +127,6 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
+
 
 
