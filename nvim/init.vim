@@ -40,12 +40,12 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 " -- js --
-"Plug 'yuezk/vim-js'
+Plug 'yuezk/vim-js'
 "Plug 'HerringtonDarkholme/yats.vim'
-"Plug 'maxmellon/vim-jsx-pretty'
+Plug 'maxmellon/vim-jsx-pretty'
 
 " -- html --
-"Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 
 
 call plug#end()
