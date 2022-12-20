@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.10)
+
+project(engine3d)
+
+set(CMAKE_C_COMPILER "/usr/bin/clang")
+
+find_package(SDL2 REQUIRED COMPONENTS SDL2)
+
+file(GLOB SRC_FILES
+	"${PROJECT_SOURCE_DIR}/src/*.h"
+	"${PROJECT_SOURCE_DIR}/src/*.c")
+
+add_executable(${CMAKE_PROJECT_NAME} ${SRC_FILES})
+
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE SDL2::SDL2)
+
+# if you are using neovim with coc-clangd, than you should generate a file using 
+# ```
+# cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=1
+# ```
+# in your build directery to avoid error message by coc-clangd.
