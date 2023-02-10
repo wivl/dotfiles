@@ -1,5 +1,8 @@
 # dotfile
+
 Some of my configurations.
 
-* init.vim
-* keyboards configs and keymaps
+# List
+
+* [nvim(lua)](./nvim/nvim/)
+* [nvim(old)](./nvim/old_vimscript_nvim/)
