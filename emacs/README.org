@@ -1,0 +1,2 @@
+** Usage
+Put *config.org*, *early-init.el* and *init.el* in *~/.emacs.d* folder, and restart Emacs. Done.

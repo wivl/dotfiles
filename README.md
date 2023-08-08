@@ -6,3 +6,4 @@ Some of my configurations.
 
 * [nvim(lua)](./nvim/nvim/)
 * [nvim(old)](./nvim/old_vimscript_nvim/)
+* [Emacs](./emacs/)
