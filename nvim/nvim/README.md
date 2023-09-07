@@ -1,4 +1,24 @@
-# Key mappings
+# wivl's Neovim Lua Config
+
+## Install
+
+### Dependencies
+
+To get full functions, you need to install a couple of dependencies.
+
+For macOS:
+
+Install telescope dependencies:
+
+```
+brew install ripgrep fd
+```
+
+Doenload and install [JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip) from [Nerd Fonts](https://www.nerdfonts.com/font-downloads) to get icons displayed in neovim correctly.
+
+### TODO: Instruction
+
+## Key Mappings
 
 > \<leader\> key is set to <kbd>SPC</kbd>
 

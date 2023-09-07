@@ -1,11 +1,11 @@
 require('rose-pine').setup({
 	--- @usage 'main' | 'moon'
-	dark_variant = 'moon',
-	-- bold_vert_split = false,
+	dark_variant = 'main',
+	bold_vert_split = false,
 	-- dim_nc_background = false,
 	-- disable_background = false,
 	-- disable_float_background = false,
-	disable_italics = true,
+	disable_italics = false,
 
 })
 
