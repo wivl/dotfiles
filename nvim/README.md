@@ -34,13 +34,9 @@ Download and install [JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd
 |<kbd>SPC</kbd><kbd>f</kbd><kbd>f</kbd>|n|telescope: Find files|
 |<kbd>SPC</kbd><kbd>f</kbd><kbd>g</kbd>|n|telescope: Find git files|
 |<kbd>SPC</kbd><kbd>f</kbd><kbd>w</kbd>|n|telescope: Find word (using grep)|
-|<kbd>SPC</kbd><kbd>g</kbd><kbd>s</kbd>|n|fugitive: Git|
-|<kbd>SPC</kbd><kbd>u</kbd>|n|undotree: Toggle|
-|<kbd>SPC</kbd><kbd>h</kbd><kbd>a</kbd>|n|harpoon: Add file|
-|<kbd>SPC</kbd><kbd>h</kbd><kbd>t</kbd>|n|harpoon: Toggle quick menu|
-|<kbd>SPC</kbd><kbd>h</kbd><kbd>1</kbd>|n|harpoon: Go to file 1|
-|<kbd>SPC</kbd><kbd>h</kbd><kbd>2</kbd>|n|harpoon: Go to file 2|
-|<kbd>SPC</kbd><kbd>h</kbd><kbd>3</kbd>|n|harpoon: Go to file 3|
-|<kbd>SPC</kbd><kbd>h</kbd><kbd>4</kbd>|n|harpoon: Go to file 4|
+|<kbd>g</kbd><kbd>c</kbd><kbd>c</kbd>|n|Toggle comment|
+|<kbd>g</kbd><kbd>b</kbd><kbd>c</kbd>|n|Toggle block comment|
+|<kbd>g</kbd><kbd>c</kbd>|v|Toggle comment|
+|<kbd>g</kbd><kbd>b</kbd>|v|Toggle block comment|
 
 
