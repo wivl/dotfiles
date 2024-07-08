@@ -2,17 +2,24 @@
 
 ## Install
 
+Since the I use Lazy.nvim as package manager,just copy and paste this directory to:
+```
+~/.config/nvim/
+~/AppData/Local/nvim/
+```
+
 ### Dependencies
 
 To get full functions, you need to install a couple of dependencies.
 
-For macOS:
 
 Install telescope dependencies:
 
 ```
 brew install ripgrep fd
+scoop install ripgrep fd
 ```
+
 
 Download and install [JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip) from [Nerd Fonts](https://www.nerdfonts.com/font-downloads) to get icons displayed in neovim correctly.
 
